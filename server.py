@@ -113,9 +113,6 @@ async def login():
     # highlight-end login
     return redirect(url)
 
-
-@app.route("/callback")
-async def callback():
     try:
         # highlight-start callback
         await auth0().complete_interactive_login(
